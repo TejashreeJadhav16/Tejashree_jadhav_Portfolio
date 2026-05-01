@@ -1010,7 +1010,6 @@ high-performance applications that create real impact and value.
 <div><img src="https://img.icons8.com/color/48/figma.png"> Figma</div>
 <div><img src="https://img.icons8.com/color/48/canva.png"> Canva</div>
 <div><img src="https://img.icons8.com/color/48/api-settings.png"> Strapi</div>
-aa
 <div><img src="https://img.icons8.com/color/48/linux.png"> Linux</div>
 <div><img src="https://img.icons8.com/color/48/windows-10.png"> Windows</div>
 
@@ -1360,6 +1359,22 @@ scrollBtn.onclick = function(){
     behavior:"smooth"
   });
 };
+</script>
+<script>
+document.querySelectorAll("#nav-links a").forEach(link => {
+  link.addEventListener("click", function(e) {
+    const targetId = this.getAttribute("href");
+
+    if (targetId.startsWith("#")) {
+      e.preventDefault();
+      document.querySelector(targetId).scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+
+    document.getElementById("nav-links").classList.remove("active");
+  });
+});
 </script>
 </body>
 </html>
