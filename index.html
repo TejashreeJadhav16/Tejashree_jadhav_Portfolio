@@ -40,20 +40,19 @@ nav{
     transform: translateY(-2px);
 }
 
-/* Styling both "Tejashree" and "Jadhav" same */
-.logo-area span:first-child,
-.logo-area span:last-child {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700; /* same for both */
-}
-
-/* Optional individual tweaks */
+/* Styling the "Tejashree" (Light part) */
 .logo-area span:first-child {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
     letter-spacing: -1px;
     color: #4A5568;
+    transition: color 0.3s ease;
 }
 
+/* Styling the "Jadhav" (Bold part) */
 .logo-area span:last-child {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
     letter-spacing: -0.5px;
     color: #002D62;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
@@ -129,6 +128,42 @@ nav a.active{
 /* OPTIONAL GLOW */
 nav a.active:hover{
   box-shadow:0 8px 22px rgba(74,144,226,0.6);
+}
+
+.logo-text span{
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;   /* SAME weight */
+  letter-spacing: -0.5px;
+  color: #002D62;
+}
+
+/* remove old span:first-child & last-child styling */
+.logo-area span:first-child,
+.logo-area span:last-child{
+  font-weight: 600 !important;
+  color: #002D62 !important;
+}
+
+/* line */
+.logo-line{
+  height: 2px;
+  width: 60px;
+  background: #0056D2;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.logo-area:hover .logo-line{
+  width: 100%;
+}
+
+/* subtitle */
+.logo-sub{
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #666;
 }
 /* HERO */
 .hero{
@@ -822,17 +857,18 @@ nav h2{
 
 </div>-->
   <!-- Premium Typography Logo -->
-  <div class="logo-area" style="display: flex; flex-direction: column; cursor: pointer;" onclick="window.location.href='#'">
-    <div style="font-size: 1.8rem; line-height: 1; letter-spacing: -0.5px;">
-      <span style="font-weight: 300; color: #333;">Tejashree</span> 
-      <span style="font-weight: 800; color: #002D62;">Jadhav</span>
-    </div>
-    <!-- Decorative Professional Divider -->
-    <div style="height: 2px; width: 60px; background: #0056D2; margin: 6px 0;"></div>
-    <div style="font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #666;">
-      Full Stack Developer & Data Visualization Executive
-    </div>
+  <div class="logo-area" onclick="window.location.href='#'">
+  <div class="logo-text">
+    <span>Tejashree Jadhav</span>
   </div>
+
+  <div class="logo-line"></div>
+
+  <div class="logo-sub">
+    Full Stack Developer & Data Visualization Executive
+  </div>
+</div>
+   
 
   <div class="menu-toggle" onclick="toggleMenu()">
     <span></span>
@@ -974,6 +1010,7 @@ high-performance applications that create real impact and value.
 <div><img src="https://img.icons8.com/color/48/figma.png"> Figma</div>
 <div><img src="https://img.icons8.com/color/48/canva.png"> Canva</div>
 <div><img src="https://img.icons8.com/color/48/api-settings.png"> Strapi</div>
+aa
 <div><img src="https://img.icons8.com/color/48/linux.png"> Linux</div>
 <div><img src="https://img.icons8.com/color/48/windows-10.png"> Windows</div>
 
@@ -1061,6 +1098,21 @@ and presentations using <b>Figma and Canva</b>.
 <div class="grid">
 
 <!-- FEATURED PROJECTS -->
+<div class="card project">
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420">
+<h3>MindSpace: Adaptive Shooter</h3>
+<p>
+JavaScript-based browser game with adaptive enemies, gravity zones, and real-time gameplay optimization.
+</p>
+</div>
+
+<div class="card project">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
+<h3>Smart Growth Dashboard</h3>
+<p>
+Full-stack app to track goals, habits, and skills with analytics and a responsive dashboard.
+</p>
+</div>
 
 <div class="card project">
 <img src="https://images.unsplash.com/photo-1557821552-17105176677c">
