@@ -40,19 +40,20 @@ nav{
     transform: translateY(-2px);
 }
 
-/* Styling the "Tejashree" (Now Bold) */
-.logo-area span:first-child {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700; /* changed from 300 to bold */
-    letter-spacing: -1px;
-    color: #4A5568;
-    transition: color 0.3s ease;
-}
-
-/* Styling the "Jadhav" (Bold part) */
+/* Styling both "Tejashree" and "Jadhav" same */
+.logo-area span:first-child,
 .logo-area span:last-child {
     font-family: 'Inter', sans-serif;
-    font-weight: 800;
+    font-weight: 700; /* same for both */
+}
+
+/* Optional individual tweaks */
+.logo-area span:first-child {
+    letter-spacing: -1px;
+    color: #4A5568;
+}
+
+.logo-area span:last-child {
     letter-spacing: -0.5px;
     color: #002D62;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
