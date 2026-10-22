@@ -10,6 +10,8 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 body{background:#f4f8fb;color:#333;line-height:1.5;}
+img{max-width:100%;height:auto;}
+html{scroll-behavior:smooth;scroll-padding-top:90px;}
 
 /* ================= NAVBAR ================= */
 nav{
@@ -644,6 +646,9 @@ font-size:14px;
 display:none;
 flex-direction:column;
 cursor:pointer;
+border:0;
+background:transparent;
+padding:4px;
 }
 
 .menu-toggle span{
@@ -847,7 +852,7 @@ nav h2{
 <nav>
 <!--<h2>Tejashree Jadhav</h2>
 
-<div class="menu-toggle" onclick="toggleMenu()">
+<button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false" onclick="toggleMenu()">
 
 <span></span>
 
@@ -874,7 +879,7 @@ nav h2{
     <span></span>
     <span></span>
     <span></span>
-  </div>
+  </button>
 
   <ul id="nav-links">
     <li><a href="#">Home</a></li>
@@ -1092,16 +1097,9 @@ and presentations using <b>Figma and Canva</b>.
 </section>
 
 <section id="projects">
-<h2>Projects</h2>
-
-<div class="grid">
-
-<!-- FEATURED PROJECTS -->
-
- <section id="projects">
   <h2>Projects</h2>
-
   <div class="grid">
+    <!-- FEATURED PROJECTS -->
 
     <!-- ================= GITHUB PROJECTS ================= -->
 
@@ -1116,7 +1114,7 @@ and presentations using <b>Figma and Canva</b>.
         experiences.
       </p>
       <a href="https://github.com/TejashreeJadhav16/puzzleverse"
-         target="_blank">
+         target="_blank" rel="noopener noreferrer">
         View on GitHub →
       </a>
     </div>
@@ -1131,7 +1129,7 @@ and presentations using <b>Figma and Canva</b>.
         Express, MySQL and modern web technologies.
       </p>
       <a href="https://github.com/TejashreeJadhav16/collaborative-document-editor"
-         target="_blank">
+         target="_blank" rel="noopener noreferrer">
         View on GitHub →
       </a>
     </div>
@@ -1146,7 +1144,7 @@ and presentations using <b>Figma and Canva</b>.
         growth with analytics and structured data management.
       </p>
       <a href="https://github.com/TejashreeJadhav16/Smart-Growth-Dashboard"
-         target="_blank">
+         target="_blank" rel="noopener noreferrer">
         View on GitHub →
       </a>
     </div>
@@ -1161,7 +1159,7 @@ and presentations using <b>Figma and Canva</b>.
         useful information and resources for village communities.
       </p>
       <a href="https://github.com/TejashreeJadhav16/Village-Knowledge-Bank"
-         target="_blank">
+         target="_blank" rel="noopener noreferrer">
         View on GitHub →
       </a>
     </div>
@@ -1176,7 +1174,7 @@ and presentations using <b>Figma and Canva</b>.
         YOLOv8 and OpenCV for computer vision-based safety monitoring.
       </p>
       <a href="https://github.com/TejashreeJadhav16/Helmet-Detection"
-         target="_blank">
+         target="_blank" rel="noopener noreferrer">
         View on GitHub →
       </a>
     </div>
@@ -1191,7 +1189,7 @@ and presentations using <b>Figma and Canva</b>.
         TypeScript with a responsive and user-friendly interface.
       </p>
       <a href="https://github.com/TejashreeJadhav16/Real-Estate"
-         target="_blank">
+         target="_blank" rel="noopener noreferrer">
         View on GitHub →
       </a>
     </div>
@@ -1233,7 +1231,7 @@ and presentations using <b>Figma and Canva</b>.
         PHP and MySQL with PDF generation.
       </p>
       <a href="https://erp.kloktekno.com/"
-         target="_blank">
+         target="_blank" rel="noopener noreferrer">
         View Project →
       </a>
     </div>
@@ -1259,7 +1257,7 @@ and presentations using <b>Figma and Canva</b>.
         and a responsive shopping experience.
       </p>
       <a href="http://nidrahomes.in/"
-         target="_blank">
+         target="_blank" rel="noopener noreferrer">
         View Project →
       </a>
     </div>
@@ -1274,7 +1272,7 @@ and presentations using <b>Figma and Canva</b>.
         JavaScript with a professional business-focused interface.
       </p>
       <a href="https://www.siepl.co.in/"
-         target="_blank">
+         target="_blank" rel="noopener noreferrer">
         View Project →
       </a>
     </div>
@@ -1289,7 +1287,7 @@ and presentations using <b>Figma and Canva</b>.
         information, services and business offerings.
       </p>
       <a href="https://metluckgroup.com/"
-         target="_blank">
+         target="_blank" rel="noopener noreferrer">
         View Project →
       </a>
     </div>
@@ -1315,7 +1313,7 @@ and presentations using <b>Figma and Canva</b>.
         and SAP with clean UI and structured navigation.
       </p>
       <a href="https://www.globaliotschool.com/"
-         target="_blank">
+         target="_blank" rel="noopener noreferrer">
         View Project →
       </a>
     </div>
@@ -1374,7 +1372,7 @@ tejashreejadhav161202@gmail.com
 <div class="contact-card">
   <img src="https://img.icons8.com/color/96/linkedin.png">
   <h3>
-    <a href="https://www.linkedin.com/in/tejashree-jadhav-5547a7299" target="_blank">
+    <a href="https://www.linkedin.com/in/tejashree-jadhav-5547a7299" target="_blank" rel="noopener noreferrer">
       LinkedIn
     </a>
   </h3>
@@ -1383,7 +1381,7 @@ tejashreejadhav161202@gmail.com
 <div class="contact-card">
   <img src="https://img.icons8.com/ios-filled/100/github.png">
   <h3>
-    <a href="https://github.com/TejashreeJadhav16" target="_blank">
+    <a href="https://github.com/TejashreeJadhav16" target="_blank" rel="noopener noreferrer">
       GitHub
     </a>
   </h3>
@@ -1414,12 +1412,12 @@ tejashreejadhav161202@gmail.com
     <!-- RIGHT -->
   <div class="footer-social">
 
-  <a href="https://www.linkedin.com/in/tejashree-jadhav-5547a7299" target="_blank">
+  <a href="https://www.linkedin.com/in/tejashree-jadhav-5547a7299" target="_blank" rel="noopener noreferrer">
     <img src="https://img.icons8.com/fluency/24/linkedin.png" alt="LinkedIn">
     LinkedIn
   </a>
 
-  <a href="https://github.com/TejashreeJadhav16" target="_blank">
+  <a href="https://github.com/TejashreeJadhav16" target="_blank" rel="noopener noreferrer">
     <img src="https://img.icons8.com/ios-filled/24/ffffff/github.png" alt="GitHub">
     GitHub
   </a>
@@ -1435,7 +1433,10 @@ tejashreejadhav161202@gmail.com
 <button id="scrollTopBtn">↑</button>
 <script>
 function toggleMenu(){
-document.getElementById("nav-links").classList.toggle("active");
+  const nav = document.getElementById("nav-links");
+  const toggle = document.querySelector(".menu-toggle");
+  const isOpen = nav.classList.toggle("active");
+  toggle.setAttribute("aria-expanded", String(isOpen));
 }
 </script>
 <script>
@@ -1485,11 +1486,15 @@ document.querySelectorAll("#nav-links a").forEach(link => {
   link.addEventListener("click", function(e) {
     const targetId = this.getAttribute("href");
 
-    if (targetId.startsWith("#")) {
+    if (targetId === "#") {
       e.preventDefault();
-      document.querySelector(targetId).scrollIntoView({
-        behavior: "smooth"
-      });
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else if (targetId.startsWith("#")) {
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth" });
+      }
     }
 
     document.getElementById("nav-links").classList.remove("active");
